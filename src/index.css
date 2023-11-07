@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#slider-wrapper{
+    width: 100%;
+    height: 38vw;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#slider-container{
+    width: 200%;
+    height: 38vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 0vw;
+    transition: all 1s ease-in-out
+}
+
+
+
+#corousal-wrapper{
+    width: 100%;
+    height: 56vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#corousal-container, #corousal-container1{
+    width: 121vw;
+    height: 55vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right: 0vw;
+    transition: all 0.5s ease-in-out;
+}
+
+/* #corousal-container:hover{
+    right: 21vw;
+} */
+
+#corousal-container-x{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#corousal-container div div, #corousal-container-x div div,#corousal-container1 div div{
+    width: 17vw;
+    height: 53vh;
+    overflow: hidden;
+}
+
+
+#corousal-container div div img, #corousal-container-x div div img, #corousal-container1 div div img{
+    width: 17vw;
+    height: 53vh;
+    transform: scale(1);
+    transition: all 7s ease-in-out;
+}
+
+#corousal-container div div img:hover, #corousal-container-x div div img:hover, #corousal-container1 div div img:hover{
+    transform: scale(1.5);
+}
+
+#negative, #negative1{
+    position: absolute;
+    top: 11vw;
+    left: 0vw;
+    width: 3vw;
+    height: 3vw;
+    z-index: 100;
+    color: white;
+    filter: invert(100%);
+}
+
+#positive, #positive1{
+    position: absolute;
+    top: 11vw;
+    right: 0vw;
+    width: 3vw;
+    height: 3vw;
+    font-size: 11vw;
+    z-index: 100;
+    color: white;
+    filter: invert(100%);
+    transform: rotate(180deg);
+}
+
+#negative1, #positive1{
+    top: 15vw;
+}
+
+/* Image CSS */
+
+#Image-container{
+    width: 100%;
+    height: 55vh;
+    overflow: hidden;
+}
+
+#Image-container img{
+    width: 100%;
+    height: 55vh;
+    transform: scale(1.35);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Footer CSS */
+
+#footer-container{
+    width: 100%;
+    height: 65vh;
+    background-color: black;
+}
